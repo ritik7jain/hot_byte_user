@@ -17,6 +17,11 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text("HotByte"),
           centerTitle: true,
+          
+        ),
+        body: Center(
+          child: Text("changes by ritik"),
+
         ),
       ),
     );
