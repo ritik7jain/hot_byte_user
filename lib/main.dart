@@ -20,7 +20,12 @@ class _MyAppState extends State<MyApp> {
           
         ),
         body: Center(
-          child: Text("changes by ritik and now changed by kunal"),
+          child: Column(children: <Widget>[
+            Text("RItik jain"),
+            SizedBox(height: 10,),
+            Text("Kunal mod"),
+            
+          ],)
 
         ),
       ),
