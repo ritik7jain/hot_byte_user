@@ -23,21 +23,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_auth: 
-  cloud_firestore: 
-  provider: 
-  flutter_spinkit: 
-  firebase_dynamic_links: 
-  google_sign_in : 
-  animated_splash: 
-  flutter_launcher_icons: 
-  firebase_core:    
+  firebase_auth:
+  cloud_firestore:
+  provider:
+  flutter_spinkit:
+  firebase_dynamic_links:
+  google_sign_in :
+  animated_splash:
+  flutter_launcher_icons:
+  firebase_core:
 
 flutter_icons:
   image_path: "assets/hot_byte.png"
   image_path_android: "assets/hot_byte.png"
   image_path_ios: "assets/hot_byte.png"
-  android: true 
+  android: true
   ios: true
 
 
