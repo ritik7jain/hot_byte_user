@@ -23,6 +23,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_auth: ^0.14.0+5
+  cloud_firestore: ^0.12.9+4
+  provider: ^3.1.0
+  flutter_spinkit: ^4.1.2+1
+  firebase_dynamic_links: ^0.5.1
+  google_sign_in : 
+  animated_splash: ^1.0.0
+  flutter_launcher_icons: ^0.7.5  
+
+flutter_icons:
+  image_path: "assets/hot_byte.png"
+  image_path_android: "assets/hot_byte.png"
+  image_path_ios: "assets/hot_byte.png"
+  android: true 
+  ios: true
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -43,6 +58,18 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/burger.png
+    - assets/cheese_dip.png
+    - assets/cola.png
+    - assets/fries.png
+    - assets/ice_cream.png
+    - assets/noodles.png
+    - assets/pizza.png
+    - assets/sandwich.png
+    - assets/wrap.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
