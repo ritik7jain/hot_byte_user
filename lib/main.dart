@@ -1,35 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:hot_byte_user/login_page.dart';
 
-void main() {
+void main() =>
   runApp(MyApp());
-}
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("HotByte"),
-          centerTitle: true,
-          
-        ),
-        body: Center(
-          child: Column(children: <Widget>[
-            Text("RItik jain"),
-            SizedBox(height: 10,),
-            Text("Kunal mod"),
-            
-          ],)
-
-        ),
-      ),
+          return  MaterialApp(
+        home : LoginPage()
+        
+      
     );
   }
 }
-
