@@ -23,9 +23,12 @@ class _MyHomePageState extends State<MyHomePage> {
       listItems.add(Container(
           height: 150,
           margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20.0)), color: Colors.white, boxShadow: [
-            BoxShadow(color: Colors.black.withAlpha(100), blurRadius: 10.0),
-          ]),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(color: Colors.black.withAlpha(100), blurRadius: 10.0),
+              ]),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
             child: Row(
@@ -36,33 +39,45 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Text(
                       post["name"],
-                      style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 28, fontWeight: FontWeight.bold),
                     ),
-
                     SizedBox(
                       height: 7,
                     ),
                     Text(
                       " ${post["price"]}",
-                      style: const TextStyle(fontSize: 20, color: Colors.grey, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 20,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold),
                     ),
                     Row(
+<<<<<<< HEAD
 
                       //mainAxisAlignment:MainAxisAlignment.end,
+=======
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                       children: <Widget>[
-                        IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
-                        SizedBox(width: 0,),
-                        IconButton(icon:Icon(Icons.do_not_disturb_on,), onPressed: (){}),
+                        IconButton(
+                            icon: Icon(Icons.add_circle_outline),
+                            onPressed: () {}),
+                        SizedBox(
+                          width: 0,
+                        ),
+                        IconButton(
+                            icon: Icon(
+                              Icons.do_not_disturb_on,
+                            ),
+                            onPressed: () {}),
                       ],
                     ),
-
                   ],
                 ),
                 Image.asset(
                   "assets/images/${post["image"]}",
                   height: double.infinity,
                 )
-
               ],
             ),
           )));
@@ -77,8 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     getPostsData();
     controller.addListener(() {
-
-      double value = controller.offset/119;
+      double value = controller.offset / 119;
 
       setState(() {
         topContainer = value;
@@ -90,16 +104,19 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    final double categoryHeight = size.height*0.30;
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Colors.lightBlueAccent,
-          title: Text("Foodies",style: TextStyle(
-            fontSize: 30,fontWeight: FontWeight.bold,
+    final double categoryHeight = size.height * 0.30;
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.lightBlueAccent,
+        title: Text(
+          "Foodies",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
             color: Colors.white,
+<<<<<<< HEAD
           ),),
 
 
@@ -113,73 +130,112 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {},
             )
           ],
+=======
+          ),
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
         ),
-        drawer: Drawer(
+        actions: <Widget>[
+// IconButton(
+//   icon: Icon(Icons.search, color: Colors.white),
+//   onPressed: () {},
+// ),
+          IconButton(
+            icon: Icon(Icons.settings, color: Colors.white),
+            onPressed: () {},
+          )
+        ],
+      ),
+      drawer: Drawer(
         child: ListView(
-          //padding: EdgeInsets.zero,
+//padding: EdgeInsets.zero,
           children: <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text(name,style:TextStyle(fontSize: 25),),
-              accountEmail: Text(email,style: TextStyle(fontSize: 17),),
+              accountName: Text(
+                name,
+                style: TextStyle(fontSize: 25),
+              ),
+              accountEmail: Text(
+                email,
+                style: TextStyle(fontSize: 17),
+              ),
               currentAccountPicture: CircleAvatar(
                 backgroundImage: NetworkImage(
                   imageUrl,
                 ),
-                
               ),
-
-
             ),
             ListTile(
-              title: Text("Hotbyte Account",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold
-
-              ),),
-              onTap: (){
-                //Navigator.pop(context);
+              title: Text(
+                "Hotbyte Account",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              onTap: () {
+//Navigator.pop(context);
               },
             ),
             ListTile(
-              title: Text("Your Orders",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold
-
-              ),),
-              onTap: (){Navigator.pop(context);},
+              title: Text(
+                "Your Orders",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
             ListTile(
-              title: Text("Track  your Order",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold
-
-              ),),
-              onTap: (){Navigator.pop(context);},
+              title: Text(
+                "Track  your Order",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
             ListTile(
-              title: Text("Your Wishlist",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold
-
-              ),),
-              onTap: (){Navigator.pop(context);},
+              title: Text(
+                "Your Wishlist",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
             ListTile(
-              title: Text("Contact Us",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold
-
-              ),),
-              onTap: (){Navigator.pop(context);},
+              title: Text(
+                "Contact Us",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
             ListTile(
-              title: Text("Sign Out",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold
-
-              ),),
+              title: Text(
+                "Sign Out",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
               onTap: () async {
-                 await signOutGoogle();
-                  Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
-                },
+                await signOutGoogle();
+                Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(builder: (context) {
+                  return LoginPage();
+                }), ModalRoute.withName('/'));
+              },
             ),
-
-
           ],
         ),
       ),
-        body: Container(
+      body: SafeArea(
+        child: Container(
           height: size.height,
           child: Column(
             children: <Widget>[
+<<<<<<< HEAD
+=======
+              SizedBox(
+                height: 10,
+              ),
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
@@ -188,9 +244,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Text(
                     "     Best Sellers",
-                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                   ),
-
                 ],
               ),
               const SizedBox(
@@ -198,12 +256,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               AnimatedOpacity(
                 duration: const Duration(milliseconds: 200),
-                opacity: closeTopContainer?0:1,
+                opacity: closeTopContainer ? 0 : 1,
                 child: AnimatedContainer(
                     duration: const Duration(milliseconds: 200),
                     width: size.width,
                     alignment: Alignment.topCenter,
-                    height: closeTopContainer?0:categoryHeight,
+                    height: closeTopContainer ? 0 : categoryHeight,
                     child: categoriesScroller),
               ),
               Expanded(
@@ -224,7 +282,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return Opacity(
                           opacity: scale,
                           child: Transform(
-                            transform:  Matrix4.identity()..scale(scale,scale),
+                            transform: Matrix4.identity()..scale(scale, scale),
                             alignment: Alignment.bottomCenter,
                             child: Align(
                                 heightFactor: 0.7,
@@ -246,7 +304,8 @@ class CategoriesScroller extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double categoryHeight = MediaQuery.of(context).size.height * 0.30 - 50;
+    final double categoryHeight =
+        MediaQuery.of(context).size.height * 0.30 - 50;
     return SingleChildScrollView(
       physics: BouncingScrollPhysics(),
       scrollDirection: Axis.horizontal,
@@ -259,16 +318,25 @@ class CategoriesScroller extends StatelessWidget {
             children: <Widget>[
               Container(
                 width: 170,
-
                 margin: EdgeInsets.only(right: 20),
+<<<<<<< HEAD
                 height: 224,
                 decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
 
+=======
+                height: 201,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 4.0),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(30.0),
+                    )),
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+<<<<<<< HEAD
 
 
                       Center(
@@ -279,36 +347,60 @@ class CategoriesScroller extends StatelessWidget {
                       Image.asset(
                           "assets/images/fries.png",
                         height:135,
+=======
+                      Image.asset(
+                        "assets/images/fries.png",
+                        height: 135,
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         width: 150,
                       ),
 
                       Row(
+<<<<<<< HEAD
 
                         mainAxisAlignment:MainAxisAlignment.center,
+=======
+                        mainAxisAlignment: MainAxisAlignment.end,
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         children: <Widget>[
-                          IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
-                          SizedBox(width: 0,),
-                          IconButton(icon:Icon(Icons.do_not_disturb_on,), onPressed: (){}),
+                          IconButton(
+                              icon: Icon(Icons.add_circle_outline),
+                              onPressed: () {}),
+                          SizedBox(
+                            width: 0,
+                          ),
+                          IconButton(
+                              icon: Icon(
+                                Icons.do_not_disturb_on,
+                              ),
+                              onPressed: () {}),
                         ],
                       ),
-
-
                     ],
                   ),
                 ),
               ),
               Container(
                 width: 170,
-
                 margin: EdgeInsets.only(right: 20),
+<<<<<<< HEAD
                 height: 224,
                 decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
 
+=======
+                height: 201,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 4.0),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(30.0),
+                    )),
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+<<<<<<< HEAD
                       Center(
                         child: Text(
                           "Burger",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
@@ -316,38 +408,62 @@ class CategoriesScroller extends StatelessWidget {
                       ),
 
 
+=======
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                       Image.asset(
                         "assets/images/burger.png",
-                        height:135 ,
+                        height: 135,
                         width: 150,
                       ),
                       Row(
+<<<<<<< HEAD
 
                         mainAxisAlignment:MainAxisAlignment.center,                        children: <Widget>[
                           IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
                           SizedBox(width: 0,),
                           IconButton(icon:Icon(Icons.do_not_disturb_on,), onPressed: (){}),
+=======
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          IconButton(
+                              icon: Icon(Icons.add_circle_outline),
+                              onPressed: () {}),
+                          SizedBox(
+                            width: 0,
+                          ),
+                          IconButton(
+                              icon: Icon(
+                                Icons.do_not_disturb_on,
+                              ),
+                              onPressed: () {}),
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         ],
                       ),
-
-
                     ],
                   ),
                 ),
               ),
-
               Container(
                 width: 170,
-
                 margin: EdgeInsets.only(right: 20),
+<<<<<<< HEAD
                 height: 224,
                 decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
 
+=======
+                height: 201,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 4.0),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(30.0),
+                    )),
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+<<<<<<< HEAD
                       Center(
                         child: Text(
                           "Pizza",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
@@ -355,38 +471,59 @@ class CategoriesScroller extends StatelessWidget {
                       ),
 
 
+=======
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                       Image.asset(
                         "assets/images/pizza.png",
-                        height:135 ,
+                        height: 135,
                         width: 150,
                       ),
                       Row(
+<<<<<<< HEAD
 
                          mainAxisAlignment:MainAxisAlignment.center,
+=======
+                        mainAxisAlignment: MainAxisAlignment.end,
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         children: <Widget>[
-                          IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
-                          SizedBox(width: 0,),
-                          IconButton(icon:Icon(Icons.do_not_disturb_on,), onPressed: (){}),
+                          IconButton(
+                              icon: Icon(Icons.add_circle_outline),
+                              onPressed: () {}),
+                          SizedBox(
+                            width: 0,
+                          ),
+                          IconButton(
+                              icon: Icon(
+                                Icons.do_not_disturb_on,
+                              ),
+                              onPressed: () {}),
                         ],
                       ),
-
-
                     ],
                   ),
                 ),
               ),
               Container(
                 width: 170,
-
                 margin: EdgeInsets.only(right: 20),
+<<<<<<< HEAD
                 height: 224,
                 decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
 
+=======
+                height: 201,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 4.0),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(30.0),
+                    )),
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+<<<<<<< HEAD
                       Center(
                         child: Text(
                           "Wrap",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
@@ -394,27 +531,38 @@ class CategoriesScroller extends StatelessWidget {
                       ),
 
 
+=======
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                       Image.asset(
                         "assets/images/wrap.png",
-                        height:135 ,
+                        height: 135,
                         width: 150,
                       ),
                       Row(
+<<<<<<< HEAD
 
                         mainAxisAlignment:MainAxisAlignment.center,
+=======
+                        mainAxisAlignment: MainAxisAlignment.end,
+>>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         children: <Widget>[
-                          IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
-                          SizedBox(width: 0,),
-                          IconButton(icon:Icon(Icons.do_not_disturb_on,), onPressed: (){}),
+                          IconButton(
+                              icon: Icon(Icons.add_circle_outline),
+                              onPressed: () {}),
+                          SizedBox(
+                            width: 0,
+                          ),
+                          IconButton(
+                              icon: Icon(
+                                Icons.do_not_disturb_on,
+                              ),
+                              onPressed: () {}),
                         ],
                       ),
-
-
                     ],
                   ),
                 ),
               ),
-
             ],
           ),
         ),
