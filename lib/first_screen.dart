@@ -53,11 +53,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontWeight: FontWeight.bold),
                     ),
                     Row(
-<<<<<<< HEAD
-
-                      //mainAxisAlignment:MainAxisAlignment.end,
-=======
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                       children: <Widget>[
                         IconButton(
                             icon: Icon(Icons.add_circle_outline),
@@ -116,23 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
             fontSize: 30,
             fontWeight: FontWeight.bold,
             color: Colors.white,
-<<<<<<< HEAD
-          ),),
-
-
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.search, color: Colors.white),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.person, color: Colors.white),
-              onPressed: () {},
-            )
-          ],
-=======
           ),
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
         ),
         actions: <Widget>[
 // IconButton(
@@ -230,12 +209,9 @@ class _MyHomePageState extends State<MyHomePage> {
           height: size.height,
           child: Column(
             children: <Widget>[
-<<<<<<< HEAD
-=======
               SizedBox(
                 height: 10,
               ),
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
@@ -319,49 +295,25 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 170,
                 margin: EdgeInsets.only(right: 20),
-<<<<<<< HEAD
-                height: 224,
-                decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
-
-=======
                 height: 201,
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.black, width: 4.0),
                     borderRadius: BorderRadius.all(
                       Radius.circular(30.0),
                     )),
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-<<<<<<< HEAD
-
-
-                      Center(
-                        child: Text(
-                          "French Fries",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Image.asset(
-                          "assets/images/fries.png",
-                        height:135,
-=======
                       Image.asset(
                         "assets/images/fries.png",
                         height: 135,
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         width: 150,
                       ),
 
                       Row(
-<<<<<<< HEAD
-
-                        mainAxisAlignment:MainAxisAlignment.center,
-=======
                         mainAxisAlignment: MainAxisAlignment.end,
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         children: <Widget>[
                           IconButton(
                               icon: Icon(Icons.add_circle_outline),
@@ -383,46 +335,23 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 170,
                 margin: EdgeInsets.only(right: 20),
-<<<<<<< HEAD
-                height: 224,
-                decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
-
-=======
                 height: 201,
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.black, width: 4.0),
                     borderRadius: BorderRadius.all(
                       Radius.circular(30.0),
                     )),
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-<<<<<<< HEAD
-                      Center(
-                        child: Text(
-                          "Burger",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
-                        ),
-                      ),
-
-
-=======
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                       Image.asset(
                         "assets/images/burger.png",
                         height: 135,
                         width: 150,
                       ),
                       Row(
-<<<<<<< HEAD
-
-                        mainAxisAlignment:MainAxisAlignment.center,                        children: <Widget>[
-                          IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
-                          SizedBox(width: 0,),
-                          IconButton(icon:Icon(Icons.do_not_disturb_on,), onPressed: (){}),
-=======
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
                           IconButton(
@@ -436,7 +365,6 @@ class CategoriesScroller extends StatelessWidget {
                                 Icons.do_not_disturb_on,
                               ),
                               onPressed: () {}),
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         ],
                       ),
                     ],
@@ -446,45 +374,24 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 170,
                 margin: EdgeInsets.only(right: 20),
-<<<<<<< HEAD
-                height: 224,
-                decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
-
-=======
                 height: 201,
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.black, width: 4.0),
                     borderRadius: BorderRadius.all(
                       Radius.circular(30.0),
                     )),
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-<<<<<<< HEAD
-                      Center(
-                        child: Text(
-                          "Pizza",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
-                        ),
-                      ),
-
-
-=======
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                       Image.asset(
                         "assets/images/pizza.png",
                         height: 135,
                         width: 150,
                       ),
                       Row(
-<<<<<<< HEAD
-
-                         mainAxisAlignment:MainAxisAlignment.center,
-=======
                         mainAxisAlignment: MainAxisAlignment.end,
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         children: <Widget>[
                           IconButton(
                               icon: Icon(Icons.add_circle_outline),
@@ -506,45 +413,24 @@ class CategoriesScroller extends StatelessWidget {
               Container(
                 width: 170,
                 margin: EdgeInsets.only(right: 20),
-<<<<<<< HEAD
-                height: 224,
-                decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
-
-=======
                 height: 201,
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.black, width: 4.0),
                     borderRadius: BorderRadius.all(
                       Radius.circular(30.0),
                     )),
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-<<<<<<< HEAD
-                      Center(
-                        child: Text(
-                          "Wrap",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
-                        ),
-                      ),
-
-
-=======
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                       Image.asset(
                         "assets/images/wrap.png",
                         height: 135,
                         width: 150,
                       ),
                       Row(
-<<<<<<< HEAD
-
-                        mainAxisAlignment:MainAxisAlignment.center,
-=======
                         mainAxisAlignment: MainAxisAlignment.end,
->>>>>>> fa8e1941c6a6f163d7e957892cd6b07aebbe600c
                         children: <Widget>[
                           IconButton(
                               icon: Icon(Icons.add_circle_outline),
