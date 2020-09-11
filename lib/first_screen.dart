@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     Row(
 
+                      //mainAxisAlignment:MainAxisAlignment.end,
                       children: <Widget>[
                         IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
                         SizedBox(width: 0,),
@@ -103,12 +104,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
           actions: <Widget>[
-            // IconButton(
-            //   icon: Icon(Icons.search, color: Colors.white),
-            //   onPressed: () {},
-            // ),
             IconButton(
-              icon: Icon(Icons.settings, color: Colors.white),
+              icon: Icon(Icons.search, color: Colors.white),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.person, color: Colors.white),
               onPressed: () {},
             )
           ],
@@ -179,7 +180,6 @@ class _MyHomePageState extends State<MyHomePage> {
           height: size.height,
           child: Column(
             children: <Widget>[
-              SizedBox(height: 10,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
@@ -261,7 +261,7 @@ class CategoriesScroller extends StatelessWidget {
                 width: 170,
 
                 margin: EdgeInsets.only(right: 20),
-                height: 201,
+                height: 224,
                 decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
 
                 child: Padding(
@@ -271,15 +271,20 @@ class CategoriesScroller extends StatelessWidget {
                     children: <Widget>[
 
 
-
+                      Center(
+                        child: Text(
+                          "French Fries",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                        ),
+                      ),
                       Image.asset(
                           "assets/images/fries.png",
-                        height:135 ,
+                        height:135,
                         width: 150,
                       ),
+
                       Row(
 
-                        mainAxisAlignment:MainAxisAlignment.end,
+                        mainAxisAlignment:MainAxisAlignment.center,
                         children: <Widget>[
                           IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
                           SizedBox(width: 0,),
@@ -296,7 +301,7 @@ class CategoriesScroller extends StatelessWidget {
                 width: 170,
 
                 margin: EdgeInsets.only(right: 20),
-                height: 201,
+                height: 224,
                 decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
 
                 child: Padding(
@@ -304,7 +309,11 @@ class CategoriesScroller extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-
+                      Center(
+                        child: Text(
+                          "Burger",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                        ),
+                      ),
 
 
                       Image.asset(
@@ -314,8 +323,7 @@ class CategoriesScroller extends StatelessWidget {
                       ),
                       Row(
 
-                        mainAxisAlignment:MainAxisAlignment.end,
-                        children: <Widget>[
+                        mainAxisAlignment:MainAxisAlignment.center,                        children: <Widget>[
                           IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
                           SizedBox(width: 0,),
                           IconButton(icon:Icon(Icons.do_not_disturb_on,), onPressed: (){}),
@@ -332,7 +340,7 @@ class CategoriesScroller extends StatelessWidget {
                 width: 170,
 
                 margin: EdgeInsets.only(right: 20),
-                height: 201,
+                height: 224,
                 decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
 
                 child: Padding(
@@ -340,7 +348,11 @@ class CategoriesScroller extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-
+                      Center(
+                        child: Text(
+                          "Pizza",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                        ),
+                      ),
 
 
                       Image.asset(
@@ -350,7 +362,7 @@ class CategoriesScroller extends StatelessWidget {
                       ),
                       Row(
 
-                        mainAxisAlignment:MainAxisAlignment.end,
+                         mainAxisAlignment:MainAxisAlignment.center,
                         children: <Widget>[
                           IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
                           SizedBox(width: 0,),
@@ -367,7 +379,7 @@ class CategoriesScroller extends StatelessWidget {
                 width: 170,
 
                 margin: EdgeInsets.only(right: 20),
-                height: 201,
+                height: 224,
                 decoration: BoxDecoration( border: Border.all(color: Colors.black,width: 4.0),borderRadius: BorderRadius.all(Radius.circular(30.0),)),
 
                 child: Padding(
@@ -375,7 +387,11 @@ class CategoriesScroller extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-
+                      Center(
+                        child: Text(
+                          "Wrap",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                        ),
+                      ),
 
 
                       Image.asset(
@@ -385,7 +401,7 @@ class CategoriesScroller extends StatelessWidget {
                       ),
                       Row(
 
-                        mainAxisAlignment:MainAxisAlignment.end,
+                        mainAxisAlignment:MainAxisAlignment.center,
                         children: <Widget>[
                           IconButton(icon:Icon(Icons.add_circle_outline), onPressed: (){}),
                           SizedBox(width: 0,),
